@@ -54,7 +54,9 @@ export default defineComponent({
     }
 
     useClient({
-      url: "http://localhost:3000/graphql", // your endpoint.
+      // url: "http://localhost:3000/graphql", // your endpoint.
+      url: "http://192.168.51.32:3000/graphql", // your endpoint.
+
       use: [authPlugin, cache(), ...defaultPlugins()],
     });
   },
